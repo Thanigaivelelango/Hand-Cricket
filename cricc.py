@@ -66,11 +66,11 @@ def main():
 def determine_result(your_runs, comp_runs):
     if comp_runs < your_runs:
         diff_runs = your_runs - comp_runs
-        return f"\nYou won the Game.\n\nYour Total Runs = {your_runs}\nComputer Total Runs = {comp_runs}\n\nCongratulations!!! You Won the game by {diff_runs} runs"
+        return f"\nYou won the Game.\n\nYour Total Runs = {your_runs}\n\nComputer Total Runs = {comp_runs}\n\nCongratulations!!! You Won the game by {diff_runs} runs"
     elif comp_runs == your_runs:
         return "The Game is a Tie"
     else:
-        return f"\nComputer won the Game.\n\nComputer Total Runs = {comp_runs}\nYour Total Runs = {your_runs}\n\nWell tried your best, comeback Strong for next match"
+        return f"\nComputer won the Game.\n\nComputer Total Runs = {comp_runs}\n\nYour Total Runs = {your_runs}\n\nWell tried your best, comeback Strong for next match"
 
 def reset_game_state():
     st.session_state.step = 1
